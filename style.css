@@ -1,0 +1,161 @@
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+img, picture, svg, video {
+display: block;
+max-width: 100%;
+}
+
+input, textarea, button, select {
+font: inherit;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+min-height: 100vh;
+background-color: rgba(233, 230, 255, 0.374);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+header,.book-card, .add-book-card{
+    background-color: white;
+}
+header h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card{
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.297);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.215);
+    width: 80%;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+    max-width: 350px;
+}
+.book-card h2{
+    text-align: center;
+    margin-bottom: 0.25em;
+    font-size: 1.75rem;
+}
+.book-card button{
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    outline: none;
+}
+button:hover{
+    filter: brightness(90%);
+}
+.book-card .remove{
+    background-color: #ffafaf;
+   width: 100%;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.book-card #status{
+  background-color: #8fe58c;
+    width: 100%;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.book-card li{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-book-card{
+    visibility: hidden;
+    padding: 1em 2em;
+    position: absolute;
+    z-index: 1;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.208);
+}
+.add-card h2{
+    text-align: center;
+}
+.add-book-card input{
+    outline: none;
+    border: none;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.423);
+}
+.add-book-card #read{
+    height: 1.5rem;
+    width: 1.5rem;
+    outline: none;
+    border: none;
+    margin-left: 1em;
+    vertical-align: -5px;
+}
+.add-book-card li{
+    font-size: 1.25rem;
+    margin: 1em auto;
+}
+.add-book-card button{
+    background-color: #8fe58c;
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.add-card > button {
+    background-color: #8fe58c;
+    width: 80%;
+    max-width: 250px;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.display{
+    visibility: visible;
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

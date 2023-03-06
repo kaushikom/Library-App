@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Library App</h1>
+    </header>
+    <main>
+        <section class="card">
+        </section>
+        <section class="add-card">
+            <div class="add-book-card" id="popup">
+                <h2>Add Book</h2>
+                <form id="form">
+                    <ul>
+                        <li><label for="name">Name</label>
+                            <input required type="text" id="name">
+                        </li>
+                        <li><label for="writer">Author</label>
+                            <input required type="text" id="writer">
+                        </li>
+                        <li><label for="pages">Pages</label>
+                            <input required type="number" id="pages">
+                        </li>
+                        <li><label for="read">Read</label>
+                            <input required type="checkbox" id="read">
+                        </li>
+                    </ul>
+                    <button id="add-book-card-button" type="submit">Submit</button>
+                </form>
+            </div>
+            <button id="add-book">Add Book</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
