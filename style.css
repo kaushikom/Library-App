@@ -75,8 +75,7 @@ button:hover{
     outline: none;
     font-weight: bold;
 }
-.book-card #status{
-  background-color: #8fe58c;
+.book-card .status{
     width: 100%;
     padding: 0.5em 2em;
     border-radius: 5px;

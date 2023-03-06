@@ -27,7 +27,7 @@ function displayBooks() {
     <h2 id="book-name">${book.title}</h2>
                 <li><span>Author : </span><span id="author">${book.author}</span></li>
                 <li><span>No. of Pages : </span><span id="npages">${book.pages}</span></li>
-                <button id="status" style = "background-color: ${bgColor}" >${book.read}</button>
+                <button id="${i}" class="status" style = "background-color: ${bgColor}" onclick = 'toggleStatus(${i})'>${book.read}</button>
                 <button class="remove" onClick ='removeBook(${i})'>Remove</button>
    `;
     cardContainer.appendChild(bookObj);
@@ -84,18 +84,13 @@ function setColor(string) {
   }
 }
 
-function toggleStatus(string) {
-  if (string == "Not read yet") {
-    string = "Read";
+function toggleStatus(i) {
+  const obj = document.getElementById(i);
+  if (obj.textContent == "Read") {
+    obj.textContent = "Not read yet";
+    obj.style.backgroundColor = "#9dc1ff";
   } else {
-    string = "Not read yet";
+    obj.textContent = "Read";
+    obj.style.backgroundColor = "#8fe58c";
   }
-  console.log("tS");
 }
-
-function changeStatus(string) {
-  toggleStatus(string);
-  // setColor(string);
-}
-
-// style="background-color: ;"
